@@ -224,6 +224,7 @@ footer{
     #Summary{
         font-weight: 800;
         font-size:2.8rem;
+        margin-left:1rem;
     }
     button{
         height:8rem;
