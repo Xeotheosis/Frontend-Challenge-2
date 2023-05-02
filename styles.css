@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Outfit:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    overflow-x: hidden;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* TEXT SETTINGS */
+h4{
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    padding-bottom:2rem;
+    color:hsl(241, 100%, 89%);
+}
+p{
+    font-size:1.8rem;
+    color:hsla(241, 100%, 89%, 0.779);
+    font-weight: 400;
+    max-width: 30rem;
+    text-align: center;
+}
+h1{
+    font-size:5.5rem;
+    color:hsl(0, 0%, 100%);
+    padding-top:2rem;
+}
+h2{
+    font-size:2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color:white;
+}
+h3{
+    color:hsl(249, 4%, 61%);
+    font-size:1.5rem;
+}
+#result{
+    background-image:linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   border-bottom-left-radius: 3rem;
+   border-bottom-right-radius: 3rem;
+   padding-bottom:4rem;
+   width:40rem;
+}
+#heading{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-image: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius:4rem;
+    height:14rem;
+    width:14rem;
+    border-radius: 7rem;
+}
+#card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.number__active{
+    color:hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+span{
+    color:rgba(155, 153, 153, 0.637);
+}
+.tab{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 2rem;
+    height:6rem;
+    width:30rem;
+    border-radius: 1rem;
+    padding:0rem 2rem 0rem 2rem;
+}
+.score{
+    padding-left:1rem;
+}
+.score.red{
+    color:rgba(255, 87, 87, 0.738);
+    font-weight: 700;
+}
+.score.orange{
+    color:hsl(39, 100%, 56%);
+}
+.flex__row{
+    display:flex;
+    flex-direction: row;
+}
+.tab.reaction{
+    background-color: hsla(0, 100%, 67%, 0.057);
+}
+.tab.memory{
+    background-color:hsla(39, 100%, 56%, 0.112);
+}
+#Summary{
+    font-size:2rem;
+    position:relative;
+    right:30%;
+    padding:1.8rem 0rem 1rem 0rem;
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+.tab.verbal{
+    background-color:hsla(166, 100%, 37%, 0.058);
+}
+.score.green{
+    color:hsl(166, 100%, 37%);
+    font-weight: bold;
+}
+.tab.visual{
+    background-color: hsla(234, 85%, 45%, 0.053);
+}
+.score.blue{
+    color:hsl(234, 85%, 45%);
+    font-weight:bold;
+}
+button{
+    border:none;
+    width:34rem;
+    height:6rem;
+    border-radius: 3rem;
+    color:rgba(255, 255, 255, 0.845);
+    background-color:hsl(224, 30%, 27%);
+    margin-top: 2.2rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+footer{
+    position:absolute;
+    bottom:0%;
+    left:15%;
+}
+/* MEDIA QUERIES*/
+
+@media screen and (min-width:750px){
+    main{
+        height:100vh;
+        width:100vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+}
+#body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+    #container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:4rem;
+        box-shadow: 0px 10px 40px rgb(192, 198, 228);
+        border-radius: 4rem;
+        max-height:max-content;
+        max-width:max-content;
+        padding-right:1rem;
+        margin:1rem;
+    }
+    #result{
+        height:48rem;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius:4rem;
+        border-bottom-right-radius:4rem;
+        border-top-left-radius:4rem;
+        width:37rem;
+        justify-content: space-around;
+        padding-left:1rem;
+    }
+    #card{
+        height:46rem;
+        width:30rem;
+        margin-bottom:4rem;
+        margin-top:1rem;
+        padding-right:1rem;
+    }
+    #stubborn_paragraph{
+        max-width: 70%;
+    }
+    #heading{
+        height:18rem;
+        width:18rem;
+        border-radius: 9rem;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size:8rem;
+    }
+    h4{
+        margin-top:0.8rem;
+        font-size:2.5rem;
+    }
+    #Summary{
+        font-weight: 800;
+        font-size:2.8rem;
+    }
+    button{
+        height:8rem;
+        width:30rem;
+    }
+    .tab{
+        margin: 1rem 0rem 1rem 0rem;
+        height:8rem;
+        width:25rem;
+
+    }
+    .tab.visual{
+        margin-bottom: 1rem;
+    }
+    .number__active{
+      margin:0;
+    }
+    footer{
+      position:absolute;
+      bottom:0%;
+      left:45%;
+
+    }
+    h2{
+        font-size:3rem;
+    }
+}
